@@ -102,7 +102,8 @@ ROOT_URLCONF = 'PupuSite.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'PupuSite.wsgi.application'
 
-TEMPLATE_DIRS = ('C:/Users/randall/Documents/GitHub/PupuDjangoApp/PupuSite/templates',)
+TEMPLATE_DIRS = ('C:/Users/randall/Documents/GitHub/PupuDjangoApp/PupuSite/templates',
+    )
 
 INSTALLED_APPS = (
     'django.contrib.auth',
