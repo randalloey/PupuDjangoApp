@@ -1,13 +1,9 @@
-from django.template.loader import get_template
-from django.template import Template, Context
-from django.http import HttpResponse, Http404
+from django.shortcuts import render
 import datetime
 
 def current_datetime(request):
     now = datetime.datetime.utcnow()
-    t = get_template('current_datetime.html')
-    html = t.render(Context({'current_date': now}))
-    return HttpResponse(html)
+    return render(request,'current_datetime.html', {'current_date': now})
 
 def hours_ahead(request, time_offset):
     try:
