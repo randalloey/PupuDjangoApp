@@ -103,6 +103,7 @@ ROOT_URLCONF = 'PupuSite.urls'
 WSGI_APPLICATION = 'PupuSite.wsgi.application'
 
 TEMPLATE_DIRS = ('C:/Users/randall/Documents/GitHub/PupuDjangoApp/PupuSite/templates',
+                 '/Users/randalloey/Documents/PupuDjangoApp/PupuSite/templates'
     )
 
 INSTALLED_APPS = (
